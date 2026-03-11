@@ -38,9 +38,6 @@ int main(int argc, char* argv[]) {
     exit(1);
     }
 
-    for (int f = 0; f < argc; f++) {
-        printf("argv[%d]: %s\n",f, argv[f]);
-    }
 
     char allowed_characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789#S@-=!";
     char password[val + 1];
@@ -54,5 +51,4 @@ int main(int argc, char* argv[]) {
     password[val] = '\0';
 
     printf("Your Passowrd is %s\n", password);
-    printf("%s", argv[1]);
-}
+   
